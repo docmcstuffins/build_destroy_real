@@ -15,7 +15,6 @@ public class CubeSnap : MonoBehaviour
 
     public void Snap()
     {
-        Debug.Log((Mathf.Round(transform.position.x * 10) / 10, Mathf.Round(transform.position.y * 10) / 10, Mathf.Round(transform.position.z * 10) / 10));
         transform.position = new Vector3(Mathf.Round(transform.position.x * 10) / 10, Mathf.Round(transform.position.y * 10) / 10, Mathf.Round(transform.position.z * 10) / 10);
         transform.rotation = new Quaternion(0,0,0,0);
     }
